@@ -1,0 +1,13 @@
+1. install php debug
+2. paste phpinfo text to https://xdebug.org/wizard.php
+3. download recommended xdebug version to C:\xampp\php\ext
+4. Add this line to php.ini: zend_extension = C:\xampp\php\ext\php_xdebug-2.7.2-7.1-vc14-x86_64.dll
+
+5. For enable remote debugging add to php.ini:
+	[XDebug]
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
+
+6. Preferences-settings, php edit setting.json add 
+	"php.validate.executablePath": "c:\\xampp\\php\\php.exe"
+7. restart webserver
